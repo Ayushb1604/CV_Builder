@@ -8,11 +8,22 @@
 <link rel="stylesheet" href="pregate.css">
 </head>
 <body>
+  <!-- <header class="site-header">
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="pay.html">Pay</a></li>
+      </ul>
+    </nav>
+  </header> -->
+
   <div class="container">
     <div class="container-heading">
-      <span class="heading-text"><i class = "fa-solid fa-file-invoice"></i><span class="heading-te">Build </span>CV</span>
+      <span class="heading-text"><i class="fa-solid fa-file-invoice"></i><span class="heading-te">Build </span>CV</span>
     </div>
-   <img src="Paid\Resume-Builder-master\img\resume-2.jpeg" alt="Resume Builder Project Image">
+    <img src="Paid\Resume-Builder-master\img\resume-2.jpeg" alt="Resume Builder Project Image" class="resume-image">
     
     <div class="project-description">
       <p>
@@ -21,7 +32,7 @@
       </p>
     </div>
     <div class="pricing-box">
-      <h2>Price: $10.00</h2>
+      <h2>Price: <span class="price">$10.00</span></h2>
       <!-- <div id="price"></div> -->
       <!-- <p>Select a plan to get started:</p> -->
       <!-- <select id="planSelect" onchange="updatePrice()">
@@ -30,10 +41,14 @@
         <option value="premium">Premium Plan ($30)</option>
       </select> -->
       <a href="pay.html">
-      <button>PAY</button>
+        <button class="pay-button">PAY</button>
       </a>
     </div>
   </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2023 Resume Builder Project. All rights reserved.</p>
+  </footer>
 
   <script src="pregate.js"></script>
 </body>

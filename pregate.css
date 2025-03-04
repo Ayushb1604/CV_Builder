@@ -1,84 +1,101 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e6e6e6; /* Dark background */
+  color: #000000; /* Light text color */
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Consistent font */
   margin: 0;
   padding: 0;
-  background-color: #f7f7f7;
-  color: #333;
+}
+
+.site-header {
+  background-color: #ffffff; /* Darker header */
+  padding: 15px 0;
+}
+
+.navbar {
+  text-align: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #000000; /* Light text for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  color: #1abc9c; /* Highlight color on hover */
 }
 
 .container {
-  width: 80%;
-  max-width: 800px;
-  margin: 20px auto;
+  text-align: center;
   padding: 20px;
-  border-radius: 8px;
-  background-color: #fff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-
 }
 
-.container-heading{
-  text-align: center;
-  height: max-content;
-  color: black;
-  font-size: larger;
-  font-weight: 700;
+.container-heading {
   margin-bottom: 20px;
 }
+
 .heading-te{
   color:rgb(7, 7, 77);
 }
-.heading-text{
-  color: blue;
+
+.heading-text {
+  font-size: 2em;
+  color: #000000; /* Consistent heading color */
 }
 
-img {
-  width: 100%;
+.resume-image {
+  max-width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
+  border-radius: 10px;
 }
 
-.project-description p {
-  font-size: 18px;
-  line-height: 1.6;
-  text-align: justify;
+.project-description {
+  margin: 20px 0;
+  color: #000000; /* Light text for description */
 }
 
 .pricing-box {
-  border: 2px solid #121b24;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-  background-color: #f9f9f9;
+  background-color: #e6e6e6; /* Darker pricing box */
+  padding: 15px;
+  border-radius: 10px;
 }
 
-h2 {
-  color: #000000;
-  font-size: 24px;
+.price {
+  color: #e74c3c; /* Price color */
+  font-size: 1.5em;
 }
 
-select {
-  padding: 10px;
-  margin-top: 10px;
-  width: 100%;
-  max-width: 200px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-button {
-  background-color: #007bff;
-  color: #fff;
+.pay-button {
+  background-color: #1abc9c; /* Button color */
+  color: white;
+  padding: 10px 20px;
   border: none;
-  padding: 12px 24px;
-  font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s;
 }
 
-button:hover {
-  background-color: #0056b3;
+.pay-button:hover {
+  background-color: #16a085; /* Darker button on hover */
+}
+
+.site-footer {
+  background-color: #e6e6e6; /* Dark footer */
+  color: #ecf0f1; /* Light text for footer */
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
